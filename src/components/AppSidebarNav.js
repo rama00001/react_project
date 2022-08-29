@@ -8,7 +8,7 @@ export const AppSidebarNav = ({ items }) => {
   const location = useLocation()
   const navLink = (name, icon, badge) => {
     return (
-      <>
+      <div>
         {icon && icon}
         {name && name}
         {badge && (
@@ -16,7 +16,7 @@ export const AppSidebarNav = ({ items }) => {
             {badge.text}
           </CBadge>
         )}
-      </>
+      </div>
     )
   }
 
